@@ -5,7 +5,7 @@ int main ()
 		// Через FOR
 	int resultFor = 0;
 	
-	for (int i = 2; i <= NUM; i++) {
+	for (int i = 2; i < NUM; i++) {
 		if (NUM % i == 0) {
 			resultFor = 1; // 1 - Число не простое
 		}
