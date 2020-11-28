@@ -1,11 +1,11 @@
-int main() 
+int main()
 {
-    int A = 51; // Первое число
-    int B = 53; // Второе число
-    int SUM = 0; // Начальное значенние суммы = 0
+    int a = 51; // Первое число
+    int b = 53; // Второе число
+    
+    int temp = (b - a) + 1;
+    float calc = ((float)a + (float)b) / 2.0;
+    int result = calc * temp;
 
-    for (int i = A; i <= B; i++) {
-        SUM += i;
-    }
     return 0;
 }
