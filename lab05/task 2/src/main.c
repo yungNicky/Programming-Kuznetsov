@@ -18,6 +18,7 @@ int main ()
 		if (NUM % i == 0) {
 			resultWhile = 1; // 1 - Число не простое
 		}
+		i++;
 	}
 		// Через Do While
 	int resultDoWhile = 0;
@@ -27,7 +28,7 @@ int main ()
 		if (NUM % j == 0) { 
 			resultDoWhile = 1; // 1 - Число не простое
 		}
-		i++;
+		j++;
 	} while (j < NUM);
 return 0;
 }
