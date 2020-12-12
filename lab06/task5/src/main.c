@@ -16,7 +16,7 @@ int main()
 		for (int k = 0; k < SIZE; k++) {
 			arrOut[j][k] = arrIn[j][k+1];
 		}
-		arrOut[SIZE-1][SIZE-1] = arrIn[0][0];
+		arrOut[j][SIZE-1] = arrIn[j][0];
 	}
 	
 	return 0;
