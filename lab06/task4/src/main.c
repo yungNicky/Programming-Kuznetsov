@@ -6,7 +6,7 @@ int main()
 	
 	int size = sizeof(text) / sizeof(text[0]); // Количество символов в массиве
 	
-	for (int i = 0; i <= size; i++) { // Считаем общее количество пробелов
+	for (int i = 0; i < size; i++) { // Считаем общее количество пробелов
 		if (text[i] == ' ' || text[i] == '\0') {
 			space += 1;
 		}
@@ -21,12 +21,7 @@ int main()
 	} 
 	
 	int amountOfWords = 0; // Счетчик слов в массиве
-	
-	if (dblspace > 2) {
-		amountOfWords = (space - dblspace) - 1;
-	} else {
-		amountOfWords = space - dblspace;
-	}
+	amountOfWords = space - dblspace;
 	
 	return 0;
 }
