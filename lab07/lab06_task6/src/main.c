@@ -12,7 +12,7 @@ int main()
 	
 	for(int i = 0; i < SIZE; i++) { // Заполнение массива входного массива
 		for (int j = 0; j < SIZE; j++) {
-			arrIn[i][j] = rand() % 9 + 1; // Заполнение числами в диапазоне от 1 до 9 символов
+			matrixIn[i][j] = rand() % 9 + 1; // Заполнение числами в диапазоне от 1 до 9 символов
 		}
 	}
 
@@ -21,7 +21,7 @@ int main()
 	return 0;
 }
 
-void multiplicationMatrix(int arrIn[SIZE][SIZE]){
+void multiplicationMatrix(int matrixIn[SIZE][SIZE]){
 	int matrixOut[SIZE][SIZE]; // Объявление результирующего массива матрицы 
 		
 	for(int i = 0; i < SIZE; i++) { // Умножение матрицы саму на себя 
